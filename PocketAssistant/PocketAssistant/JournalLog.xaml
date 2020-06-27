@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PocketAssistant.JournalLog"
+             Title="Journal log">
+    <ContentPage.Content>
+        <StackLayout >
+            <StackLayout Padding="0,20,0,30">
+                <Label Text="Journal log" TextColor="#3b414d" HorizontalOptions="Center" FontSize="35" FontFamily="Pangram-Black.otf#Pangram-Black"/>
+            </StackLayout>
+            <ListView x:Name="JournalList"  ItemsSource="{Binding Expences}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View >
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Padding="5,0,0,0" FontFamily="Pangram-Regular.otf#Pangram-Regular" Text="{Binding}" FontSize="18" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

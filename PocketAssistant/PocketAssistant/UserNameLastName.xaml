@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PocketAssistant.UserNameLastName">
+
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout   HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                <Label Text="Pocket assistent" TextColor="#3b414d" FontSize="30" FontFamily="Pangram-Black.otf#Pangram-Black" Padding="0,40,0,0" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+            </StackLayout>
+            <StackLayout Padding="20,50,0,0">
+                <Label Text="Here are a few steps &#10;to get you started." Opacity="0.5"  FontSize="25" FontFamily="Pangram-Light.otf#Pangram-Light"    HorizontalOptions="Center" ></Label>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Padding="0,60,0,0">
+                <Label Text="Enter your name" FontSize="20" FontFamily="Pangram-Regular.otf#Pangram-Regular"></Label>
+                <Entry x:Name="userName"  ClearButtonVisibility="WhileEditing"  Keyboard="Default" ></Entry>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Padding="0,50,0,0">
+                <Label Text="Enter your surname" FontSize="20" FontFamily="Pangram-Regular.otf#Pangram-Regular"></Label>
+                <Entry x:Name="userSurname" ClearButtonVisibility="WhileEditing"  Keyboard="Default" ></Entry>
+            </StackLayout>
+            <StackLayout Padding="0,50,0,0" HorizontalOptions="Center" >
+                <Button Text="Continue" BackgroundColor ="#3b414d" TextColor="White" Padding="30,0,30,0"  CornerRadius="100" BorderColor="Black" FontFamily="Pangram-Regular.otf#Pangram-Regular"  BorderWidth="0.5" HorizontalOptions="FillAndExpand" Clicked="UserNameSurnm_Click"  ></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+        

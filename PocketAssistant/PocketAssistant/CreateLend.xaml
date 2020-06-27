@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PocketAssistant.CreateLend"
+             Title="Create a debt">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  Text="Add" IconImageSource="chekMark" Clicked="AddLent_Click" />
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+    <Frame HasShadow="True">
+            <Label Text="Here you can create a new debt." TextColor="#3b414d" FontSize="20" FontFamily="Pangram-Regular.otf#Pangram-Regular"/>
+                   </Frame>
+        <Frame HasShadow="True">
+            <StackLayout>
+                <Label Text="Name" FontFamily="Pangram-Regular.otf#Pangram-Regular"></Label>
+                <Entry x:Name="UserName" Placeholder="To whom you have lent?"></Entry>
+                <Label Text="Amount"  Padding="0,30,0,0" FontFamily="Pangram-Regular.otf#Pangram-Regular"></Label>
+                <Entry x:Name="LentAmount" Placeholder ="Enter amount of debt" Keyboard="Numeric" ></Entry>
+                <Label x:Name ="LentDescription"  Text="Description" Padding="0,30,0,0" FontFamily="Pangram-Regular.otf#Pangram-Regular"></Label>
+                <Entry Placeholder="Add some description" ></Entry>
+                <StackLayout Padding="0,30,0,0">
+                    <Label Text="Date" />
+                    <DatePicker x:Name="Date_Picker" TextColor="Black" FontSize="17"  FontFamily="Pangram-Regular.otf#Pangram-Regular"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+   
+   </ContentPage>

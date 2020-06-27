@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PocketAssistant.MainPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout   HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                <Label Text="Pocket assistant" TextColor="#3b414d"  FontSize="30" FontFamily="Pangram-Black.otf#Pangram-Black" Padding="0,40,0,0" HorizontalOptions="Center" VerticalOptions="Center"></Label>
+            </StackLayout>
+            <StackLayout>
+                <Label Text="Welcome to your wallet." TextColor="#3b414d" FontSize="25" FontFamily="Pangram-Medium.otf#Pangram-Medium" Padding="0,150,0,0" HorizontalOptions="Center" ></Label>
+            </StackLayout>
+            <StackLayout>
+                <Label Padding="0,20,0,0" FontSize="15" TextColor="#3b414d" Text="Be prepared to control your finance." FontFamily="Pangram-Light.otf#Pangram-Light" HorizontalOptions="Center"></Label>
+            </StackLayout>
+            <StackLayout Padding="0,100,0,0" HorizontalOptions="Center" >
+                <Button Text="Get started" BackgroundColor="#3b414d" TextColor="White" CornerRadius="100" BorderColor="Black" FontFamily="Pangram-Regular.otf#Pangram-Regular"  BorderWidth="0.5" HorizontalOptions="FillAndExpand" Clicked="GetStarted_Click"  ></Button>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand" >
+                <Label Text="All rights reserved 2020" HorizontalOptions="Center" FontFamily="Pangram-Light.otf#Pangram-Light"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

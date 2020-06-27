@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PocketAssistant.Expenses"
+             Title="Pocket assistant" >
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem  Text="Add" IconImageSource="chekMark" Clicked="SaveExp_Click" />
+    </ContentPage.ToolbarItems>
+   
+
+       
+           
+        <StackLayout>
+            <Frame HasShadow="True">
+                <Label Text="Create a new Expense." TextColor="#3b414d" FontSize="20" FontFamily="Pangram-Regular.otf#Pangram-Regular"/>
+            </Frame>
+            <Frame HasShadow="True">
+                <StackLayout>
+                    <Label Text="Amount" FontFamily="Pangram-Regular.otf#Pangram-Regular"></Label>
+                    <Entry x:Name="AmountEntry" Placeholder="enter amount" Keyboard="Numeric"></Entry>
+                    <Label Text="Description"  Padding="0,30,0,0" FontFamily="Pangram-Regular.otf#Pangram-Regular"></Label>
+                    <Entry x:Name="DescEntry"  Placeholder ="add some description"  ></Entry>
+                    <Label  Text="Category"  Padding="0,30,0,0" FontFamily="Pangram-Regular.otf#Pangram-Regular"></Label>
+
+                <Picker x:Name="picker" Title="choose the category here" >
+                    <Picker.Items>
+                        <x:String>Food/Dining</x:String>
+                        <x:String>Clothing</x:String>
+                        <x:String>Transportation</x:String>
+                        <x:String>Other</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <StackLayout Padding="0,30,0,0">
+                        <Label Text="Date" />
+                        <DatePicker x:Name="Date_Picker" TextColor="Black" FontSize="17"  FontFamily="Pangram-Regular.otf#Pangram-Regular"/>
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+        <Frame>
+            <Button Text="Overview" HorizontalOptions="Center"  FontFamily="Pangram-Regular.otf#Pangram-Regular" BackgroundColor="#3b414d" TextColor="White" Clicked="OverView_Click" Padding="30,0,30,0"> </Button>
+        </Frame>
+    </StackLayout>
+
+
+</ContentPage>

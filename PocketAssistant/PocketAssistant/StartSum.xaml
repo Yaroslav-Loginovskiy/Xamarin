@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PocketAssistant.StartSum">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Padding="0,90,0,0" >
+                <Label x:Name="Label1" HorizontalOptions="Center" TextColor="#3b414d" FontSize="45" FontFamily="Pangram-Regular.otf#Pangram-Regular" />
+            </StackLayout>
+            <!--<StackLayout Padding="0,40,0,0">
+                <Label Text="We're near the beginning" FontSize="18" HorizontalOptions="Center"  FontFamily="Pangram-Regular.otf#Pangram-Regular" ></Label>
+            </StackLayout>-->
+            <StackLayout Padding="0,140,0,0">
+                <Label Text="Enter starting amount" TextColor="#3b414d" HorizontalOptions="Center" FontSize="25" FontFamily="Pangram-Regular.otf#Pangram-Regular"></Label>
+            </StackLayout>
+            <StackLayout Padding="0,40,0,0">
+                <Entry x:Name="StartSuma"   Margin="30,30,30,30" Keyboard="Numeric"   ></Entry>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand" Padding="0,0,0,50"  HorizontalOptions="Center">
+                
+                <Button Text="Start"  BackgroundColor="#3b414d" TextColor="White" Clicked="WeAreStart_Click"  Padding="30,0,30,0" CornerRadius="30" BorderColor="Black" BorderWidth="0.5" FontFamily="Pangram-Light.otf#Pangram-Light"   ></Button>
+                
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

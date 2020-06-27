@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PocketAssistant.CreateSavings"
+             Title="Savings">
+    <ContentPage.Content>
+        <ScrollView>
+        <Frame Margin="10,0,10,0">
+            <StackLayout>
+           
+            <StackLayout>
+                <Label  Text="Your current balance :" Margin="0,10,0,0" HorizontalOptions="Center" FontSize="25" FontFamily="Pangram-Regular.otf#Pangram-Regular"/>
+                <Label  x:Name="CurrentBalance" Margin="0,10,0,0" HorizontalOptions="Center" FontSize="25" FontFamily="Pangram-Regular.otf#Pangram-Regular" />
+                
+                <Label Text="Your savings" Margin="0,20,0,0" HorizontalOptions="Center" FontSize="25" FontFamily="Pangram-Regular.otf#Pangram-Regular" />
+                <Label x:Name="CurrSavings" Margin="0,10,0,0" TextColor="#00FF00" HorizontalOptions="Center" FontSize="25" FontFamily="Pangram-Regular.otf#Pangram-Regular" />
+            </StackLayout>
+                <StackLayout>
+                    <Label Padding="10,0,10,0" Text="Add a new savings" Margin="0,20,0,0"  HorizontalOptions="Center" FontSize="25" FontFamily="Pangram-Regular.otf#Pangram-Regular"/>
+                    <Entry x:Name="UserSavings" Placeholder="enter your savings"  Margin="30,30,30,0" Keyboard="Numeric" />
+                    <Button Text="Add" HorizontalOptions="Center"  Margin="0,40,0,0" BackgroundColor="#3b414d" FontFamily="Pangram-Regular.otf#Pangram-Regular" Clicked="AddSav_Click" TextColor="White"></Button>
+                </StackLayout>
+                <StackLayout>
+                    <Label Text="Transferring money to an active balance from savings" Margin="0,30,0,0" HorizontalOptions="Center" FontSize="20" FontFamily="Pangram-Regular.otf#Pangram-Regular"/>
+                        <Entry x:Name="TransfAmount" Margin="0,10,0,10" Placeholder="enter your amount" Keyboard="Numeric"/>
+                        <Button Text="Transfer"  BackgroundColor="#3b414d" TextColor="White"  FontFamily="Pangram-Regular.otf#Pangram-Regular" Clicked="Transfer_Click" Margin="45,20,45,0" />
+                    </StackLayout>
+            </StackLayout>
+       </Frame>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
